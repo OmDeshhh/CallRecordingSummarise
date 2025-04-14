@@ -1,0 +1,134 @@
+/* Global Styling */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  /* Glassmorphic Container */
+  .container {
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    max-width: 700px;
+    width: 90%;
+    animation: fadeIn 1s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Header */
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00c9ff, #92fe9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="file"] {
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 14px;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 201, 255, 0.4);
+  }
+  
+  /* Transcript & Summary Box */
+  .box, .output-text {
+    background: #1b1b1b;
+    color: #eaeaea;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;
+    max-height: 400px;
+    font-family: 'Courier New', monospace;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+    scrollbar-width: thin;
+    scrollbar-color: #00c9ff #111;
+  }
+  
+  .output-text::-webkit-scrollbar {
+    width: 8px;
+  }
+  .output-text::-webkit-scrollbar-thumb {
+    background-color: #00c9ff;
+    border-radius: 10px;
+  }
+  
+  /* Back Link */
+  .back {
+    text-decoration: none;
+    color: #00c9ff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .back:hover {
+    color: #92fe9d;
+  }
+  
+  /* Loader Spinner */
+  .loader {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #00c9ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

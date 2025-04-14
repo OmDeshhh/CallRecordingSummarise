@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transcription Result</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Transcription Output</h1>
+
+    <h2>📄 Transcript</h2>
+    <div class="output-text">
+      {{ transcript }}
+    </div>
+
+    <h2>🧠 Summary</h2>
+    <div class="box summary">
+      <p>{{ summary }}</p>
+    </div>
+
+    <a href="/" class="back">⬅️ Upload Another File</a>
+  </div>
+</body>
+</html>
