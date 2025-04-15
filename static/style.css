@@ -71,29 +71,31 @@ body {
   }
   
   /* Transcript & Summary Box */
-  .box, .output-text {
+.box, .output-text {
     background: #1b1b1b;
     color: #eaeaea;
-    padding: 20px;
+    padding: 15px;  /* Reduced padding for better fit */
     border-radius: 14px;
     margin: 20px 0;
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 500px; /* Increased max-height to accommodate more content */
     font-family: 'Courier New', monospace;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
     scrollbar-width: thin;
     scrollbar-color: #00c9ff #111;
-  }
-  
-  .output-text::-webkit-scrollbar {
+    font-size: 14px; /* Adjust font size for better readability */
+}
+
+.output-text::-webkit-scrollbar {
     width: 8px;
-  }
-  .output-text::-webkit-scrollbar-thumb {
+}
+.output-text::-webkit-scrollbar-thumb {
     background-color: #00c9ff;
     border-radius: 10px;
-  }
+}
+
   
   /* Back Link */
   .back {
